@@ -5,7 +5,12 @@ This piece of code has been used in the following publication (please refer to i
 - Albin Fontaine, Sebastian Lequime, Isabelle Moltini-Conclois, Davy Jiolle, Isabelle Leparc-Goffart, Robert Charles Reiner, Louis Lambrechts (2018) Epidemiological significance of dengue virus genetic variation in mosquito infection
 dynamics. PLoS Pathogens (in press)
 
-It runs with the help of the following packages:
+The three different files can be found in the repository. They differ in the way "Mosquito to human" (or vertebrate host) transmission probability is computed:
+- ArboEpiSim-3Parameter.R : the probability of transmission is depend on time according to a 3 parameter model (see above paper for more details). Each parameter set is uniquely drawn for each individual mosquito in the population.
+- ArboEpiSim-Fixed_Threshold.R : the probability of transmission is constant (100%) once the EIP (fixed, same for every individual in the population) is reached.
+- ArboEpiSim-Variable_Threshold.R : the probability of transmission is constant (100%) once the EIP (uniquely drawn from a distribution, according for measured parameters of the population, for each mosquito individual) is reached. 
+
+This code runs with the help of the following packages:
 - foreach: Microsoft & Steve Weston (2017). foreach: Provides Foreach Looping Construct for R. R package version 1.4.4. https://CRAN.R-project.org/package=foreach
 - doParallel: Microsoft & Steve Weston (2017). doParallel: Foreach Parallel Adaptor for the 'parallel' Package. R package version 1.0.11. https://CRAN.R-project.org/package=doParallel
 - plyr: Hadley Wickham (2011) The Split=Apply=Combine Strategy for Data Analysis. Journal of Statistical Software 40(1):1=29
