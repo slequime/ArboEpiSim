@@ -1,7 +1,7 @@
 # ArboEpiSim
 ArboEpiSim is an arbovirus agent-based epidemiological simulator taking into account within-host dynamics in R.
 
-This piece of code has been used in the following publication:
+This piece of code has been used in the following publication (please refer to it for more informations):
 - Albin Fontaine, Sebastian Lequime, Isabelle Moltini-Conclois, Davy Jiolle, Isabelle Leparc-Goffart, Robert Charles Reiner, Louis Lambrechts (2018) Epidemiological significance of dengue virus genetic variation in mosquito infection
 dynamics. PLoS Pathogens (in press)
 
@@ -13,15 +13,3 @@ It runs with the help of the following packages:
 - reshape2: Hadley Wickham (2007) Reshaping Data with the reshape Package. Journal of Statistical Software 21(10):1=20
 - data.table:Matt Dowle & Arun Srinivasan (2017) data.table: Extension of 'data.frame'. R package version 1.10.4=3. https://CRAN.R-project.org/package=data.table
 - stringr:Hadley Wickham (2017) stringr: Simple, Consistant Wrappers for Common String Operations. R package version 1.2.0 https://CRAN.R-project.org/package=stringr
-
-library(foreach)
-library(doParallel)
-
-library(plyr)
-library(dplyr)
-
-library(reshape2)
-
-library(data.table)
-library(grid)
-library(stringr)
