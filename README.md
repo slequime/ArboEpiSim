@@ -3,7 +3,7 @@ ArboEpiSim is an arbovirus agent-based epidemiological simulator taking into acc
 
 This piece of code has been used in the following publication (please refer to it for more informations):
 - Albin Fontaine, Sebastian Lequime, Isabelle Moltini-Conclois, Davy Jiolle, Isabelle Leparc-Goffart, Robert Charles Reiner, Louis Lambrechts (2018) Epidemiological significance of dengue virus genetic variation in mosquito infection
-dynamics. PLoS Pathogens (in press)
+dynamics. PLoS Pathogens 14(7): e1007187. https://doi.org/10.1371/journal.ppat.1007187
 
 The three different files can be found in the repository. They differ in the way "Mosquito to human" (or vertebrate host) transmission probability is computed:
 - ArboEpiSim-3Parameter.R : the probability of transmission is depend on time according to a 3 parameter model (see above paper for more details). Each parameter set is uniquely drawn for each individual mosquito in the population.
